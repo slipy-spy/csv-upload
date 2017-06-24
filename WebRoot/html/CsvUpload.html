@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSV上传</title>
+
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="../js/csvupload.js"></script>
+<script type="text/javascript" src="../layui/layui.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../css/csvupload.css">
+<link rel="stylesheet" type="text/css" href="../layui/css/layui.css">
+
+</head>
+
+<body>
+	<div class="cu-top">
+		<h3>CSV上传</h3>
+		<div class="cu-top-nav">
+			<input type="file" name="file" class="layui-upload-file" />
+			<button id="my-readdb-btn" class="layui-btn">读取数据库</button>
+		</div>
+	</div>
+	<hr>
+	<div class="cu-center">
+		<table class="layui-table" lay-even lay-skin="line">
+			<thead align="center">
+				<tr>
+					<th>选择</th>
+					<th>学号</th>
+					<th>姓名</th>
+					<th>性别</th>
+					<th>年龄</th>
+					<th>宿舍号</th>
+					<th>年级</th>
+					<th>班级</th>
+					<th>学院</th>
+					<th>专业</th>
+					<th>辅导员</th>
+					<th>入学时间</th>
+					<th>学校</th>
+				</tr>
+			</thead>
+			<tbody align="center"></tbody>
+			<tfoot align="left">
+				<tr>
+					<td colspan="1"><a>全选</a><a>删除</a></td>
+					<td colspan="11"><div id="cu-fenye"></div></td>
+					<td colspan="1"><span></span><span></span></td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	<div class="cu-bottom">
+		<a id="my-download-file-a" class="download-a"
+			href="/csv-upload/DownloadServlet">下载</a>
+	</div>
+</body>
+</html>

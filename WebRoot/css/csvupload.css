@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+a:HOVER {
+	cursor: pointer;
+}
+
+/* +++ cu-top +++++++++++++++++++++++++ */
+.cu-top {
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+.cu-top h3 {
+	text-align: center;
+	font-size: 28px;
+	color: #06D29D;
+}
+
+.cu-top .cu-top-nav {
+	text-align: center;
+	margin-top: 10px;
+}
+
+/* +++ cu-center +++++++++++++++++++++++++ */
+.cu-center {
+	padding: 0px 10px;
+}
+
+.cu-center table thead tr th {
+	text-align: center;
+}
+
+.cu-center table tfoot tr td:first-child {
+	text-align: center;
+}
+
+.cu-center table tfoot tr td a:last-child {
+	margin-left: 10px;
+}
+
+/* +++ cu-bottom +++++++++++++++++++++++++ */
+.cu-bottom {
+	position: relative;
+}
+
+.cu-bottom .download-a {
+	visibility: hidden;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
